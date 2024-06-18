@@ -17,7 +17,7 @@ RUN apt-get update && \
     apt-get install -y libsm6 libxext6 libfontconfig1 libxrender1 libglib2.0-0 supervisor python-dev swig ssh libcap2-bin nano && \
     mkdir -p /opt/aws && \
     cd /opt/aws && \
-    wget https://s3.amazonaws.com/aws-cli/awscli-bundle.zip && \
+    wget https://s3.amazonaws.com/aws-cli/awscli-bundle-1.18.76.zip -O awscli-bundle.zip && \
     unzip awscli-bundle.zip && \
     python3 awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws && \
     rm -rf awscli-bundle.zip awscli-bundle && \
